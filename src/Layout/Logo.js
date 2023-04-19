@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Row, Col, Navbar, Nav, } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import img from "../assets/images/logoGrocery.avif"
@@ -9,6 +9,15 @@ const Header = () => {
     const navigateTo = useNavigate();
     const usingContext = useContext(ContextWrapper)
 
+    useEffect(() => {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+
+        navbarToggler.addEventListener('click', () => {
+            navbarCollapse.classList.toggle('show');
+        });
+
+    }, [])
     return (
         // <Row className="bg-light py-3">
         //     <Col>
@@ -30,7 +39,7 @@ const Header = () => {
         // </Row>
         <header>
             <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: '#BCA136', }}>
-                <div className="container" >
+                <div className="container " >
                     <a className="navbar-brand" >
                         <img src={img} className='rounded-5' alt="Logo" width="50" height="50" style={{ marginRight: '20px', color: 'navy' }} />
                         My Grocery
@@ -38,12 +47,12 @@ const Header = () => {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarNav" >
-                        <ul className="navbar-nav ms-auto">
-                            <li className="nav-item" onClick={() => { navigateTo('/') }}>
+                    <div className="collapse navbar-collapse " id="navbarNav" >
+                        <ul className="navbar-nav ms-auto ">
+                            <li className="nav-item " onClick={() => { navigateTo('/') }}>
                                 <a className="nav-link active" aria-current="page" id='navbarA'>Home</a>
                             </li>
-                            <li className="nav-item" onClick={() => { navigateTo('/cart') }}>
+                            <li className="nav-item " onClick={() => { navigateTo('/cart') }}>
                                 <a className="nav-link" id='navbarA'>Cart({usingContext.cart.length})</a>
                             </li>
                         </ul>
