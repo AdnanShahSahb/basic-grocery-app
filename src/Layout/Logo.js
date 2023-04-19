@@ -40,7 +40,7 @@ const Header = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav" >
                         <ul className="navbar-nav ms-auto">
-                            <li className="nav-item" onClick={() => { navigateTo('/') }}>
+                            <li className="nav-item" onClick={() => { navigateTo('/basic-grocery-app/') }}>
                                 <a className="nav-link active" aria-current="page" id='navbarA'>Home</a>
                             </li>
                             <li className="nav-item" onClick={() => { navigateTo('/cart') }}>
