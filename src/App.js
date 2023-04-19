@@ -24,7 +24,7 @@ function App() {
     <Layout>
       <Row className="my-4">
         <Routes>
-          <Route path='/' element={<><Search /><MenuCategories /><MainInfos /></>} />
+          <Route path='/basic-grocery-app/' element={<><Search /><MenuCategories /><MainInfos /></>} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/checkout' element={<Checkout />} />
           <Route path='/specificItem/:id' element={<SpecificItem />} />
