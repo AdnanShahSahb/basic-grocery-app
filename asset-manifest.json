@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/AdnanShahSahb/basic-grocery-app.git/static/css/main.d4e3dfff.css",
-    "main.js": "/AdnanShahSahb/basic-grocery-app.git/static/js/main.c23b9265.js",
-    "static/media/banner.jpg": "/AdnanShahSahb/basic-grocery-app.git/static/media/banner.0ffac5fe4f3d945dd7a4.jpg",
-    "static/media/tomatoes.jpg": "/AdnanShahSahb/basic-grocery-app.git/static/media/tomatoes.01618fe275fc0efc5971.jpg",
-    "static/media/lettuce.jpg": "/AdnanShahSahb/basic-grocery-app.git/static/media/lettuce.9f9905820c132fd4dd20.jpg",
-    "static/media/frozenBurritos.jpg": "/AdnanShahSahb/basic-grocery-app.git/static/media/frozenBurritos.13cedc2a96c473529b1e.jpg",
-    "static/media/frozenVeg.jpg": "/AdnanShahSahb/basic-grocery-app.git/static/media/frozenVeg.232762310ca52efbdb92.jpg",
-    "static/media/hayCow.jpg": "/AdnanShahSahb/basic-grocery-app.git/static/media/hayCow.e0c6a7dda5821ec29eec.jpg",
-    "static/media/frozenPizza.jpg": "/AdnanShahSahb/basic-grocery-app.git/static/media/frozenPizza.fdd1fe20455d0fe31a9c.jpg",
-    "static/media/broccoli.jpg": "/AdnanShahSahb/basic-grocery-app.git/static/media/broccoli.6360e1bb741cd84a9d9b.jpg",
-    "static/media/logoGrocery.avif": "/AdnanShahSahb/basic-grocery-app.git/static/media/logoGrocery.ab4bc7e8c52c7797674e.avif",
-    "index.html": "/AdnanShahSahb/basic-grocery-app.git/index.html",
-    "main.d4e3dfff.css.map": "/AdnanShahSahb/basic-grocery-app.git/static/css/main.d4e3dfff.css.map",
-    "main.c23b9265.js.map": "/AdnanShahSahb/basic-grocery-app.git/static/js/main.c23b9265.js.map"
+    "main.css": "/AdnanShahSahb/basic-grocery-app/static/css/main.d4e3dfff.css",
+    "main.js": "/AdnanShahSahb/basic-grocery-app/static/js/main.308c5452.js",
+    "static/media/banner.jpg": "/AdnanShahSahb/basic-grocery-app/static/media/banner.0ffac5fe4f3d945dd7a4.jpg",
+    "static/media/tomatoes.jpg": "/AdnanShahSahb/basic-grocery-app/static/media/tomatoes.01618fe275fc0efc5971.jpg",
+    "static/media/lettuce.jpg": "/AdnanShahSahb/basic-grocery-app/static/media/lettuce.9f9905820c132fd4dd20.jpg",
+    "static/media/frozenBurritos.jpg": "/AdnanShahSahb/basic-grocery-app/static/media/frozenBurritos.13cedc2a96c473529b1e.jpg",
+    "static/media/frozenVeg.jpg": "/AdnanShahSahb/basic-grocery-app/static/media/frozenVeg.232762310ca52efbdb92.jpg",
+    "static/media/hayCow.jpg": "/AdnanShahSahb/basic-grocery-app/static/media/hayCow.e0c6a7dda5821ec29eec.jpg",
+    "static/media/frozenPizza.jpg": "/AdnanShahSahb/basic-grocery-app/static/media/frozenPizza.fdd1fe20455d0fe31a9c.jpg",
+    "static/media/broccoli.jpg": "/AdnanShahSahb/basic-grocery-app/static/media/broccoli.6360e1bb741cd84a9d9b.jpg",
+    "static/media/logoGrocery.avif": "/AdnanShahSahb/basic-grocery-app/static/media/logoGrocery.ab4bc7e8c52c7797674e.avif",
+    "index.html": "/AdnanShahSahb/basic-grocery-app/index.html",
+    "main.d4e3dfff.css.map": "/AdnanShahSahb/basic-grocery-app/static/css/main.d4e3dfff.css.map",
+    "main.308c5452.js.map": "/AdnanShahSahb/basic-grocery-app/static/js/main.308c5452.js.map"
   },
   "entrypoints": [
     "static/css/main.d4e3dfff.css",
-    "static/js/main.c23b9265.js"
+    "static/js/main.308c5452.js"
   ]
 }
