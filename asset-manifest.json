@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.d4e3dfff.css",
-    "main.js": "/static/js/main.463393e6.js",
-    "static/media/banner.jpg": "/static/media/banner.0ffac5fe4f3d945dd7a4.jpg",
-    "static/media/tomatoes.jpg": "/static/media/tomatoes.01618fe275fc0efc5971.jpg",
-    "static/media/lettuce.jpg": "/static/media/lettuce.9f9905820c132fd4dd20.jpg",
-    "static/media/frozenBurritos.jpg": "/static/media/frozenBurritos.13cedc2a96c473529b1e.jpg",
-    "static/media/frozenVeg.jpg": "/static/media/frozenVeg.232762310ca52efbdb92.jpg",
-    "static/media/hayCow.jpg": "/static/media/hayCow.e0c6a7dda5821ec29eec.jpg",
-    "static/media/frozenPizza.jpg": "/static/media/frozenPizza.fdd1fe20455d0fe31a9c.jpg",
-    "static/media/broccoli.jpg": "/static/media/broccoli.6360e1bb741cd84a9d9b.jpg",
-    "static/media/logoGrocery.avif": "/static/media/logoGrocery.ab4bc7e8c52c7797674e.avif",
-    "index.html": "/index.html",
-    "main.d4e3dfff.css.map": "/static/css/main.d4e3dfff.css.map",
-    "main.463393e6.js.map": "/static/js/main.463393e6.js.map"
+    "main.css": "/basic-grocery-app/static/css/main.d4e3dfff.css",
+    "main.js": "/basic-grocery-app/static/js/main.de360a9f.js",
+    "static/media/banner.jpg": "/basic-grocery-app/static/media/banner.0ffac5fe4f3d945dd7a4.jpg",
+    "static/media/tomatoes.jpg": "/basic-grocery-app/static/media/tomatoes.01618fe275fc0efc5971.jpg",
+    "static/media/lettuce.jpg": "/basic-grocery-app/static/media/lettuce.9f9905820c132fd4dd20.jpg",
+    "static/media/frozenBurritos.jpg": "/basic-grocery-app/static/media/frozenBurritos.13cedc2a96c473529b1e.jpg",
+    "static/media/frozenVeg.jpg": "/basic-grocery-app/static/media/frozenVeg.232762310ca52efbdb92.jpg",
+    "static/media/hayCow.jpg": "/basic-grocery-app/static/media/hayCow.e0c6a7dda5821ec29eec.jpg",
+    "static/media/frozenPizza.jpg": "/basic-grocery-app/static/media/frozenPizza.fdd1fe20455d0fe31a9c.jpg",
+    "static/media/broccoli.jpg": "/basic-grocery-app/static/media/broccoli.6360e1bb741cd84a9d9b.jpg",
+    "static/media/logoGrocery.avif": "/basic-grocery-app/static/media/logoGrocery.ab4bc7e8c52c7797674e.avif",
+    "index.html": "/basic-grocery-app/index.html",
+    "main.d4e3dfff.css.map": "/basic-grocery-app/static/css/main.d4e3dfff.css.map",
+    "main.de360a9f.js.map": "/basic-grocery-app/static/js/main.de360a9f.js.map"
   },
   "entrypoints": [
     "static/css/main.d4e3dfff.css",
-    "static/js/main.463393e6.js"
+    "static/js/main.de360a9f.js"
   ]
 }
