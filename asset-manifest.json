@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/basic-grocery-app/static/css/main.48448619.css",
-    "main.js": "/basic-grocery-app/static/js/main.e8d959fe.js",
+    "main.js": "/basic-grocery-app/static/js/main.f06e8b07.js",
     "static/media/banner.jpg": "/basic-grocery-app/static/media/banner.0ffac5fe4f3d945dd7a4.jpg",
     "static/media/tomatoes.jpg": "/basic-grocery-app/static/media/tomatoes.01618fe275fc0efc5971.jpg",
     "static/media/lettuce.jpg": "/basic-grocery-app/static/media/lettuce.9f9905820c132fd4dd20.jpg",
@@ -13,10 +13,10 @@
     "static/media/logoGrocery.avif": "/basic-grocery-app/static/media/logoGrocery.ab4bc7e8c52c7797674e.avif",
     "index.html": "/basic-grocery-app/index.html",
     "main.48448619.css.map": "/basic-grocery-app/static/css/main.48448619.css.map",
-    "main.e8d959fe.js.map": "/basic-grocery-app/static/js/main.e8d959fe.js.map"
+    "main.f06e8b07.js.map": "/basic-grocery-app/static/js/main.f06e8b07.js.map"
   },
   "entrypoints": [
     "static/css/main.48448619.css",
-    "static/js/main.e8d959fe.js"
+    "static/js/main.f06e8b07.js"
   ]
 }
