@@ -45,14 +45,15 @@ const MainInfos = () => {
                                 })
 
                                 return (
-                                    <Col md={4} key={k} style={{ padding: theArrOfDiffOf3.includes(k) ? 'auto' : '0px'}} id='mainInfoCol' >
+                                    // <Col md={4} key={k} style={{ padding: '0px', margin:'auto'  }} id='mainInfoCol' >
+                                    <Col md={4} key={k} style={{ padding: theArrOfDiffOf3.includes(k) ? 'auto' : '0px', }} id='mainInfoCol' >
                                         {/* <Col md={4} key={k} style={{ paddingRight: k % 3 == 0 ? 'auto' : '0px', paddingLeft: (k) == 0 || k % 3 == 0 ? '0px' : 'auto' }} > */}
                                         <Card className="mb-3">
                                             <Card.Img height={150} variant="top" src={images.images[0][dataHeader][k]} alt="Product" />
                                             <Card.Body>
                                                 <Card.Title>{d.product_name}</Card.Title>
                                                 <Card.Text>${d.unit_price}</Card.Text>
-                                                <Link to={`/specificItem/${k}`}>< >See Detail</></Link>
+                                                <Link to={`/specificItem/${k}`} style={{fontSize:'12px'}}>< >See Detail</></Link>
                                                 <label style={{ color: '#fff' }}>llllllllllll</label>
                                                 <Button variant="primary" onClick={() => {
                                                     usingContext.addToCartFunc({ name: d.product_name, price: d.unit_price, id: d.product_id, })
