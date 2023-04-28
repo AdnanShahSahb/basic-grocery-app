@@ -10,11 +10,12 @@ const Layout = (props) => {
     return (
         <>
             <Logo />
+            <div style={{ height: '75.961px' }}>takePlaceOfNavbar</div>
             <Banner />
             <Container>
                 {props.children}
-                <Footer />
             </Container>
+            <Footer />
         </>
     )
 }

@@ -23,13 +23,13 @@ const MenuCategories = () => {
     const hovering = !usingContext.petOnOtherOffVisible ? usingContext.chooseCategoryState : usingContext.chooseCategoryPetState;
 
     return (
-        <Col className='greening' md={3} style={{ backgroundColor: '#BCA136 ', }}>
+        <Col className='greening' md={3} style={{ backgroundColor: '#BCA136 ',borderTopLeftRadius: '100px', borderTopRightRadius: '100px', }}>
             <Nav className="flex-column text-center" style={{marginTop:'10vh'}}>
                 {Object.keys(data).map((d, k) => {
                     if (k == Object.keys(data).length - 1) { }
                     else {
                         return (
-                            <Nav.Item className=''>
+                            <Nav.Item className='' key={k}>
                                 <Nav.Link id='categs' onClick={(e) => { chooseCategoryOtherFood(e.target.innerHTML) }} style={{ color: 'navy', backgroundColor: d == hovering ? 'green' : '#BCA136', color: d == hovering ? '#fff' : 'navy' }} active>
                                     {Object.keys(data)[k]}
                                 </Nav.Link>
@@ -40,8 +40,8 @@ const MenuCategories = () => {
 
 
                 <NavDropdown title="Pet Food" id="products-dropdown" >
-                    {Object.keys(data['Pet-Food'][0]).map((d) => {
-                        return (<NavDropdown.Item id='categs' onClick={(e) => { setHeaderPet(e.target.innerHTML) }} style={{ color: 'navy', backgroundColor: d == hovering ? 'green' : '#BCA136', fontWeight: d == hovering ? 'bolder' : '' }}>{d}</NavDropdown.Item>)
+                    {Object.keys(data['Pet-Food'][0]).map((d,k) => {
+                        return (<NavDropdown.Item key={k} id='categs' onClick={(e) => { setHeaderPet(e.target.innerHTML) }} style={{ color: 'navy', backgroundColor: d == hovering ? 'green' : '#BCA136', fontWeight: d == hovering ? 'bolder' : '' }}>{d}</NavDropdown.Item>)
                     })}
                 </NavDropdown>
             </Nav>

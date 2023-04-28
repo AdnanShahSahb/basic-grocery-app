@@ -37,10 +37,10 @@ const Header = () => {
         //         </Navbar>
         //     </Col>
         // </Row>
-        <header>
-            <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: '#BCA136', }}>
+        <header id='header'>
+            <nav className="navbar navbar-expand-lg navbar-light position-fixed w-100" style={{ zIndex: '100', backgroundColor: '#BCA136', }}>
                 <div className="container " >
-                    <a className="navbar-brand" >
+                    <a id='logoId' className="navbar-brand" onClick={() => { navigateTo('/') }}>
                         <img src={img} className='rounded-5' alt="Logo" width="50" height="50" style={{ marginRight: '20px', color: 'navy' }} />
                         My Grocery
                     </a>

@@ -22,6 +22,11 @@ a:hover {
     background-color: #BCA136;
 }
 
+#categs {
+    border-radius: 100px;
+
+}
+
 #categs:hover {
     background-color: #00b300;
     transform: scale(1.1);
@@ -46,6 +51,81 @@ a:hover {
 
 
 
-#dustbinIconCart:hover{
+#dustbinIconCart:hover {
+    cursor: pointer;
+}
+
+#moveDownIconOnBanner {
+    color: darkgreen;
+    background-color: #BCA136;
+    font-size: 50px;
+    /* top: 65vh; */
+    top: 85vh;
+    right: 0px;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    border-radius: 100px;
+    transition: 0.2s all;
+    z-index: 10;
+    /* padding-bottom: 100px; */
+}
+
+#profileLinks {
+    font-size: 14px;
+    word-break: break-all;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #moveDownIconOnBanner {
+        top: 65vh;
+    }
+
+    #mainInfoCol {
+        padding: 0;
+    }
+
+/* 
+    #profileLinks {
+        font-size: 4px;
+    } */
+}
+
+#moveDownIconOnBanner:hover {
+    cursor: pointer;
+
+    background-color: darkgreen;
+    color: yellowgreen;
+}
+
+#toDisplayNoneForHref {
+
+    color: darkgreen;
+    background-color: #BCA136;
+    font-size: 50px;
+    top: 71.5vh;
+    right: 0px;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    border-radius: 100px;
+    transition: 0.2s all;
+    z-index: -10;
+}
+
+#footer {
+    margin-top: 60px;
+    background-color: darkgreen;
+}
+
+
+#profileLinks:hover {
+    cursor: pointer;
+}
+
+#logoId:hover{
     cursor: pointer;
 }

@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useRef } from 'react'
 import { Form, Button } from 'react-bootstrap';
 import ContextWrapper from '../ContextApi';
-import { getDataFromForm } from '../customHook/getDataFromForm';
-import { emailSending } from "../customHook/emailSending"
+import { getDataFromForm } from '../funcs/getDataFromForm';
+import { emailSending } from "../funcs/emailSending"
 
 const Checkout = () => {
 
@@ -19,10 +19,12 @@ const Checkout = () => {
 
   useEffect(() => {
 
+    document.getElementById('toDisplayNoneForHref').scrollIntoView();
+
     // Get the form element
     const form = document.getElementById('myForm');
 
-    // Add event listener for form submission
+    // Add event listener htmlFor form submission
     form.addEventListener('submit', function (event) {
       // Check if the form is valid
       if (form.checkValidity() === false) {
@@ -30,7 +32,7 @@ const Checkout = () => {
         event.stopPropagation();
       }
 
-      // Add a class to show validation feedback
+      // Add a className to show validation feedback
       form.classList.add('was-validated');
 
       event.preventDefault();
@@ -63,13 +65,13 @@ const Checkout = () => {
 
     });
 
-    // Add event listeners for input fields to remove validation feedback on input
+    // Add event listeners htmlFor input fields to remove validation feedback on input
     form.addEventListener('input', function (event) {
       event.target.classList.remove('is-invalid');
       event.target.classList.remove('is-valid');
     });
 
-    // Add event listeners for input fields to show validation feedback on blur
+    // Add event listeners htmlFor input fields to show validation feedback on blur
     form.addEventListener('blur', function (event) {
       if (event.target.checkValidity() === false) {
         event.target.classList.add('is-invalid');
@@ -81,8 +83,8 @@ const Checkout = () => {
   }, [])
 
   return (
-    <div>
-      <h2>Checkout</h2>
+    <div style={{ width: '80%', margin: 'auto' }}>
+      <h2 id='checkoutTextH2'>Checkout</h2>
       {/* <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
@@ -127,64 +129,138 @@ const Checkout = () => {
           Place Order
         </Button>
       </Form> */}
-      <form id="myForm" ref={checkoutRefForm} class="needs-validation" novalidate>
+      {/* <form id="myForm" ref={checkoutRefForm} className="needs-validation" noValidate>
+        <div className='row'>
 
-        <div class="mb-3">
-          <label for="firstName" class="form-label">First Name</label>
-          <input name='deliv_name' type="text" class="form-control" id="firstName" required />
-          <div class="invalid-feedback">
-            Please provide a valid first name.
+          <div className="mb-3">
+            <label htmlFor="firstName" className="form-label">First Name</label>
+            <input name='deliv_name' type="text" className="form-control" id="firstName" required />
+            <div classNameNameName="invalid-feedback">
+              Please provide a valid first name.
+            </div>
           </div>
+          <div className="mb-3">
+            <label htmlFor="lastName" className="form-label">Email ID</label>
+            <input name='deliv_email' type="text" classNameNameName="form-control" id="email" required />
+            <div classNameName="invalid-feedback">
+              Please provide a valid Email ID.
+            </div>
+          </div>
+
+          <div className="mb-3">
+            <label htmlFor="firstName" className="form-label">Address</label>
+            <input name='deliv_address' type="text" className="form-control" id="address" required />
+            <div className="invalid-feedback">
+              Please provide a valid Address.
+            </div>
+          </div>
+          <div className="mb-3">
+            <label htmlFor="lastName" className="form-label">Suburb</label>
+            <input name='deliv_suburb' type="text" className="form-control" id="suburb" required />
+            <div className="invalid-feedback">
+              Please provide a valid Suburb.
+            </div>
+          </div>
+
+          <div className="mb-3">
+            <label htmlFor="firstName" className="form-label">State</label>
+            <input name='deliv_state' type="text" className="form-control" id="state" required />
+            <div className="invalid-feedback">
+              Please provide a valid State.
+            </div>
+          </div>
+          <div className="mb-3">
+            <label htmlFor="lastName" className="form-label">Country</label>
+            <input name='deliv_country' type="text" className="form-control" id="country" required />
+            <div className="invalid-feedback">
+              Please provide a valid Country.
+            </div>
+          </div>
+
+          <div className="mb-3">
+            <label htmlFor="firstName" className="form-label">Number</label>
+            <input name='deliv_number' type="text" className="form-control" id="number" required />
+            <div className="invalid-feedback">
+              Please provide a valid Number.
+            </div>
+          </div>
+
+
+          <button type="submit" className="btn btn-primary">Place Order</button>
         </div>
-        <div class="mb-3">
-          <label for="lastName" class="form-label">Email ID</label>
-          <input name='deliv_email' type="text" class="form-control" id="email" required />
-          <div class="invalid-feedback">
-            Please provide a valid Email ID.
+
+      </form> */}
+
+      <form id="myForm" ref={checkoutRefForm} className="needs-validation" noValidate>
+
+        <div className="row">
+          <div className="col-md-6">
+            <div className="mb-3">
+              <label htmlFor="firstName" className="form-label">First Name</label>
+              <input name='deliv_name' type="text" className="form-control" id="firstName" required />
+              <div className="invalid-feedback">
+                Please provide a valid first name.
+              </div>
+            </div>
+
+            <div className="mb-3">
+              <label htmlFor="country" className="form-label">Country</label>
+              <input name='deliv_country' type="text" className="form-control" id="country" required />
+              <div className="invalid-feedback">
+                Please provide a valid country.
+              </div>
+            </div>
+
+
+            <div className="mb-3">
+              <label htmlFor="state" className="form-label">State</label>
+              <input name='deliv_state' type="text" className="form-control" id="state" required />
+              <div className="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+
+            <div className="mb-3">
+              <label htmlFor="number" className="form-label">Number</label>
+              <input name='deliv_number' type="text" className="form-control" id="number" required />
+              <div className="invalid-feedback">
+                Please provide a valid number.
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-6">
+            <div className="mb-3">
+              <label htmlFor="email" className="form-label">Email ID</label>
+              <input name='deliv_email' type="text" className="form-control" id="email" required />
+              <div className="invalid-feedback">
+                Please provide a valid Email ID.
+              </div>
+            </div>
+
+            <div className="mb-3">
+              <label htmlFor="suburb" className="form-label">Suburb</label>
+              <input name='deliv_suburb' type="text" className="form-control" id="suburb" required />
+              <div className="invalid-feedback">
+                Please provide a valid suburb.
+              </div>
+            </div>
+
+
+            <div className="mb-3">
+              <label htmlFor="address" className="form-label">Address</label>
+              <textarea rows={5} name='deliv_address' type="text" className="form-control" id="address" required />
+              <div className="invalid-feedback">
+                Please provide a valid address.
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="mb-3">
-          <label for="firstName" class="form-label">Address</label>
-          <input name='deliv_address' type="text" class="form-control" id="address" required />
-          <div class="invalid-feedback">
-            Please provide a valid Address.
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="lastName" class="form-label">Suburb</label>
-          <input name='deliv_suburb' type="text" class="form-control" id="suburb" required />
-          <div class="invalid-feedback">
-            Please provide a valid Suburb.
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="firstName" class="form-label">State</label>
-          <input name='deliv_state' type="text" class="form-control" id="state" required />
-          <div class="invalid-feedback">
-            Please provide a valid State.
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="lastName" class="form-label">Country</label>
-          <input name='deliv_country' type="text" class="form-control" id="country" required />
-          <div class="invalid-feedback">
-            Please provide a valid Country.
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="firstName" class="form-label">Number</label>
-          <input name='deliv_number' type="text" class="form-control" id="number" required />
-          <div class="invalid-feedback">
-            Please provide a valid Number.
-          </div>
-        </div>
-
-
-        <button type="submit" class="btn btn-primary">Place Order</button>
+        <button type="submit" className="btn btn-primary">Place Order</button>
       </form>
+
 
     </div>
 
